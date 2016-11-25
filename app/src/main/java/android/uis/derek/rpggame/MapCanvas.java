@@ -1,6 +1,7 @@
 package android.uis.derek.rpggame;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.view.View;
 
@@ -22,7 +23,11 @@ public class MapCanvas extends View {
 
         super(context);
 
-        paint
+    }
+
+    public void onDraw(Canvas canvas) {
+
+        canvas.drawRGB(255, 255, 255);
 
     }
 
